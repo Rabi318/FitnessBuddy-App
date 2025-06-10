@@ -10,9 +10,9 @@ const Footer = () => {
             IGNITE
           </h2>
           <p className="text-gray-600 dark:text-gray-400 mb-6">
-            Nutrition tracking for real life.
+            Fitness tracking for real life.
           </p>
-          <button className="bg-white text-blue-700 font-bold py-3 px-6 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 flex items-center justify-center">
+          <button className="bg-white text-blue-700 font-bold py-3 px-6 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 flex items-center justify-center cursor-pointer dark:hover:bg-gray-500 dark:hover:text-white">
             START TODAY
             <svg
               className="ml-2 w-4 h-4"
@@ -38,25 +38,28 @@ const Footer = () => {
             <li>
               <a
                 href="#"
-                className="hover:text-gray-800 dark:hover:text-white transition duration-200"
+                className="relative inline-block hover:text-gray-800 dark:hover:text-white transition duration-200 group"
               >
                 Exercise
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="hover:text-gray-800 dark:hover:text-white transition duration-200"
+                className="relative inline-block hover:text-gray-800 dark:hover:text-white transition duration-200 group"
               >
                 Apps
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="hover:text-gray-800 dark:hover:text-white transition duration-200"
+                className="relative inline-block hover:text-gray-800 dark:hover:text-white transition duration-200 group"
               >
                 Premium
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
           </ul>
@@ -68,33 +71,37 @@ const Footer = () => {
             <li>
               <a
                 href="#"
-                className="hover:text-gray-800 dark:hover:text-white transition duration-200"
+                className="relative inline-block hover:text-gray-800 dark:hover:text-white transition duration-200 group"
               >
                 Blog
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="hover:text-gray-800 dark:hover:text-white transition duration-200"
+                className="relative inline-block hover:text-gray-800 dark:hover:text-white transition duration-200 group"
               >
                 Community
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="hover:text-gray-800 dark:hover:text-white transition duration-200"
+                className="relative inline-block hover:text-gray-800 dark:hover:text-white transition duration-200 group"
               >
                 Contact Us
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="hover:text-gray-800 dark:hover:text-white transition duration-200"
+                className="relative inline-block hover:text-gray-800 dark:hover:text-white transition duration-200 group"
               >
                 Support Center
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
           </ul>
@@ -106,33 +113,37 @@ const Footer = () => {
             <li>
               <a
                 href="#"
-                className="hover:text-gray-800 dark:hover:text-white transition duration-200"
+                className="relative inline-block hover:text-gray-800 dark:hover:text-white transition duration-200 group"
               >
                 About Us
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="hover:text-gray-800 dark:hover:text-white transition duration-200"
+                className="relative inline-block hover:text-gray-800 dark:hover:text-white transition duration-200 group"
               >
                 Careers
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="hover:text-gray-800 dark:hover:text-white transition duration-200"
+                className="relative inline-block hover:text-gray-800 dark:hover:text-white transition duration-200 group"
               >
                 Press
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
             <li>
               <a
                 href="#"
-                className="hover:text-gray-800 dark:hover:text-white transition duration-200"
+                className="relative inline-block hover:text-gray-800 dark:hover:text-white transition duration-200 group"
               >
                 Advertise With Us
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </li>
           </ul>
@@ -142,8 +153,8 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="mt-12 pt-8 border-t border-gray-300 dark:border-gray-700 text-center text-gray-600 dark:text-gray-400 text-sm">
         <p className="mb-4">
-          &copy; {new Date().getFullYear()} MyFitnessPal, Inc. Community
-          Guidelines Feedback Terms Privacy API Cookie Preferences
+          &copy; {new Date().getFullYear()} Ignite, Inc. Community Guidelines
+          Feedback Terms Privacy API Cookie Preferences
         </p>
         <div className="flex justify-center space-x-6">
           {/* Social Media Icons (using Phosphor Icons or similar visual placeholders) */}

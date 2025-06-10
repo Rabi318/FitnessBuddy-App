@@ -1,6 +1,7 @@
 import React from "react";
 import phoneImage from "../assets/hero-phone-large.webp";
 import Rating from "../components/Rating";
+import Banner from "../components/Banner";
 
 const Home = () => {
   return (
@@ -42,6 +43,7 @@ const Home = () => {
         </div>
       </div>
       <Rating />
+      <Banner />
     </>
   );
 };
