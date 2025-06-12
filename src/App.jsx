@@ -8,6 +8,10 @@ import { setUser } from "./features/auth/authSlice";
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
+import Profile from "./pages/Profile";
+import ChatWindow from "./components/ChatWindow";
+import WorkoutTrackerPage from "./pages/WorkoutTrackerPage";
+import RecommendationsPage from "./pages/RecommendationsPage";
 
 function App() {
   const dispatch = useDispatch();
@@ -26,6 +30,13 @@ function App() {
       <main className="flex-grow pt-16">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route
+            path="/chat/:chatRoomId/:otherUserId"
+            element={<ChatWindow />}
+          />
+          <Route path="/workout-tracker" element={<WorkoutTrackerPage />} />
+          <Route path="/recommendations" element={<RecommendationsPage />} />
         </Routes>
       </main>
       <Footer />
