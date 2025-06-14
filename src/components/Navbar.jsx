@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { logout as logoutAction } from "../features/auth/authSlice";
 import { logoutUser } from "../services/authService";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   Moon,
   Sun,
@@ -136,7 +136,8 @@ const Navbar = () => {
         <img
           src={theme === "dark" ? "/lightlogo.png" : "/darklogo.png"}
           alt="FitnessBuddy Logo"
-          className="h-10 w-auto object-contain transition duration-300 hidden lg:block"
+          className="h-10 w-auto object-contain transition duration-300 hidden lg:block cursor-pointer"
+          onClick={() => navigate("/")}
         />
 
         {/* Main Navbar Controls (Navigation Links, Theme Toggle & Auth) */}
@@ -183,9 +184,9 @@ const Navbar = () => {
             <a href="#" className="hover:text-blue-500 transition">
               Features
             </a>
-            <a href="#" className="hover:text-blue-500 transition">
+            <Link to="/challenges" className="hover:text-blue-500 transition">
               Challenges
-            </a>
+            </Link>
             <a href="#" className="hover:text-blue-500 transition">
               Subscription
             </a>
@@ -343,7 +344,7 @@ const Navbar = () => {
             </button>
             <button
               onClick={() => {
-                navigate("#challenges");
+                navigate("/challenges");
                 handleNavLinkClick();
               }}
               className="block w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md text-gray-800 dark:text-gray-200"

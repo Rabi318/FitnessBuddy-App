@@ -12,6 +12,10 @@ import Profile from "./pages/Profile";
 import ChatWindow from "./components/ChatWindow";
 import WorkoutTrackerPage from "./pages/WorkoutTrackerPage";
 import RecommendationsPage from "./pages/RecommendationsPage";
+import Challenges from "./pages/Challenges";
+import MyChallenges from "./pages/MyChallenges";
+import AboutUs from "./pages/AboutUs";
+import Careers from "./pages/Careers";
 
 function App() {
   const dispatch = useDispatch();
@@ -37,6 +41,10 @@ function App() {
           />
           <Route path="/workout-tracker" element={<WorkoutTrackerPage />} />
           <Route path="/recommendations" element={<RecommendationsPage />} />
+          <Route path="/challenges" element={<Challenges />} />
+          <Route path="/my-challenges" element={<MyChallenges />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/careers" element={<Careers />} />
         </Routes>
       </main>
       <Footer />
